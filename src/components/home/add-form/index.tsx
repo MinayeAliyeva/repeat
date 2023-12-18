@@ -3,7 +3,7 @@ const AddForm = () => {
   return (
     <form>
       <label>Name</label>
-      <input />
+      <input  />
       <label>Age</label>
       <input type="number" />
       <button type="button">Add</button>
