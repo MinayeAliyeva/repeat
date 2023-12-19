@@ -40,8 +40,11 @@ export const todoSlice = createSlice({
         return todo;
       });
     },
+    remove: (state, action) => {
+      return state.filter((todo) => todo.id !== action.payload);
+    },
   },
 });
 
 export const todoReducer = todoSlice.reducer;
-export const { add, mark } = todoSlice.actions;
+export const { add, mark, remove } = todoSlice.actions;

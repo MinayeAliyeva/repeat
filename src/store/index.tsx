@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { todoReducer } from "../feautures/todoSlice";
-import { add, mark } from "../feautures/todoSlice";
+import { add, mark, remove } from "../feautures/todoSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { TypedUseSelectorHook } from "react-redux";
 export const store = configureStore({
@@ -18,5 +18,5 @@ export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
 const getState = (state: RootState) => state;
 const getTodoListSelector = (state: RootState) => getState(state)?.todos;
 
-export { add, mark };
+export { add, mark, remove };
 export { getTodoListSelector };
