@@ -1,12 +1,18 @@
-header{
+header {
   display: flex;
   justify-content: space-around;
   padding: 20px;
 }
-form{
+form {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 10px;
+}
+.cart {
+  border: 1px solid;
+  padding: 20px;
+  margin: 10px;
+  width: 100px;
 }
